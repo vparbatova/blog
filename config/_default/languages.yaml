@@ -1,22 +1,49 @@
-# Languages
-#   Create a section for each of your site's languages.
-#   Documentation: https://docs.hugoblox.com/reference/language/
+# config/_default/languages.yaml
 
-# Default language
+# Английский язык (основной)
 en:
   languageCode: en-us
-  # Uncomment for multi-lingual sites, and move English content into `en` sub-folder.
-  #contentDir: content/en
+  languageName: English
+  contentDir: content/en
+  title: "Varvara Arbatova"
+  weight: 1
+  params:
+    description: "Academic profile"
+  menu:
+    main:
+      - name: "Home"
+        url: "#home"
+        weight: 10
+      - name: "Publications"
+        url: "#publications"
+        weight: 20
+      - name: "Projects"
+        url: "#projects"
+        weight: 30
+      - name: "Contact"
+        url: "#contact"
+        weight: 40
 
-# Uncomment the lines below to configure your website in a second language.
-#zh:
-#  languageCode: zh-Hans
-#  contentDir: content/zh
-#  title: Chinese website title...
-#  params:
-#    description: Site description in Chinese...
-#  menu:
-#    main:
-#      - name: 传
-#        url: '#about'
-#        weight: 1
+# Русский язык
+ru:
+  languageCode: ru-ru
+  languageName: Русский
+  contentDir: content/ru
+  title: "Варвара Арбатова"
+  weight: 2
+  params:
+    description: "Академический профиль"
+  menu:
+    main:
+      - name: "Главная"
+        url: "#home"
+        weight: 10
+      - name: "Публикации"
+        url: "#publications"
+        weight: 20
+      - name: "Проекты"
+        url: "#projects"
+        weight: 30
+      - name: "Контакты"
+        url: "#contact"
+        weight: 40

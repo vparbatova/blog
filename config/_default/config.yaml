@@ -1,3 +1,5 @@
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
 security:
   funcs:
     getenv: ["^HUGO_", "^WC_"]

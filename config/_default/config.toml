@@ -1,2 +1,5 @@
 [security.funcs]
 getenv = ["^HUGO_", "^WC_"]
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

@@ -3,3 +3,4 @@ defaultContentLanguageInSubdir: false
 security:
   funcs:
     getenv: ["^HUGO_", "^WC_"]
+baseURL: https://vparbatova.github.io/blog/

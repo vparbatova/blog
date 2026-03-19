@@ -62,33 +62,26 @@ sections:
       #   Leave `date_end` empty if it's your current employer.
       #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
       items:
-        - title: CEO
-          company: GenCoin
+        - title: Студентка
+          company: РУДН
           company_url: ''
           company_logo: org-gc
           location: California
-          date_start: '2021-01-01'
+          date_start: '2023-09-01'
           date_end: ''
           description: |2-
-              Responsibilities include:
+              Обязанности включают в себя:
 
-              * Analysing
-              * Modelling
-              * Deploying
-        - title: Professor of Semiconductor Physics
-          company: University X
-          company_url: ''
-          company_logo: org-x
-          location: California
-          date_start: '2016-01-01'
-          date_end: '2020-12-31'
-          description: Taught electronic engineering and researched semiconductor physics.
+              * Анализ
+              * Моделирование
+              * Развертывание   
+
     design:
       columns: '2'
   - block: accomplishments
     content:
       # Note: `&shy;` is used to add a 'soft' hyphen in a long heading.
-      title: 'Accomplish&shy;ments'
+      title: 'Достижения'
       subtitle:
       # Date format: https://docs.hugoblox.com/customization/#date-format
       date_format: Jan 2006
@@ -107,30 +100,12 @@ sections:
           organization_url: https://www.coursera.org
           title: Neural Networks and Deep Learning
           url: ''
-        - certificate_url: https://www.edx.org
-          date_end: ''
-          date_start: '2021-01-01'
-          description: Formulated informed blockchain models, hypotheses, and use cases.
-          icon: edx
-          organization: edX
-          organization_url: https://www.edx.org
-          title: Blockchain Fundamentals
-          url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
-        - certificate_url: https://www.datacamp.com
-          date_end: '2020-12-21'
-          date_start: '2020-07-01'
-          description: ''
-          icon: datacamp
-          organization: DataCamp
-          organization_url: https://www.datacamp.com
-          title: 'Object-Oriented Programming in R'
-          url: ''
     design:
       columns: '2'
   - block: collection
     id: posts
     content:
-      title: Recent Posts
+      title:  Посты
       subtitle: ''
       text: ''
       # Choose how many pages you would like to display (0 = all pages)
@@ -157,7 +132,7 @@ sections:
   - block: portfolio
     id: projects
     content:
-      title: Projects
+      title: Проекты
       filters:
         folders:
           - project
@@ -183,7 +158,7 @@ sections:
       flip_alt_rows: false
   - block: markdown
     content:
-      title: Gallery
+      title: Галлерея
       subtitle: ''
       text: |-
         {{< gallery album="demo" >}}
@@ -192,7 +167,7 @@ sections:
   - block: collection
     id: featured
     content:
-      title: Featured Publications
+      title: Избранные публикации
       filters:
         folders:
           - publication
@@ -202,7 +177,7 @@ sections:
       view: card
   - block: collection
     content:
-      title: Recent Publications
+      title: Недавние публикации
       text: |-
         {{% callout note %}}
         Quickly discover relevant content by [filtering publications](./publication/).
@@ -217,7 +192,7 @@ sections:
   - block: collection
     id: talks
     content:
-      title: Recent & Upcoming Talks
+      title: Последние и предстоящие выступления
       filters:
         folders:
           - event
@@ -226,18 +201,18 @@ sections:
       view: compact
   - block: tag_cloud
     content:
-      title: Popular Topics
+      title: Популярные темы
     design:
       columns: '2'
   - block: contact
     id: contact
     content:
-      title: Contact
+      title: Контакты
       subtitle:
       text: |-
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam mi diam, venenatis ut magna et, vehicula efficitur enim.
       # Contact (add or remove contact options as necessary)
-      email: test@example.org
+      email: 1132236020@pfur.ru
       phone: 888 888 88 88
       appointment_url: 'https://calendly.com'
       address:

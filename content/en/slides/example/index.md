@@ -1,169 +1,138 @@
 ---
-title: Slides
-summary: An introduction to using Hugo Blox Builder's Slides feature.
+title: "Formation of the Solar System"
+subtitle: "Theoretical Foundations"
+summary: "An introduction to using Hugo Blox Builder's Slides feature."
 authors: []
 tags: []
 categories: []
-date: '2019-02-05T00:00:00Z'
+date: '2026-03-19'
 slides:
-  # Choose a theme from https://github.com/hakimel/reveal.js#theming
   theme: black
-  # Choose a code highlighting style (if highlighting enabled in `params.toml`)
-  #   Light style: github. Dark style: dracula (default).
   highlight_style: dracula
 ---
 
-# Create slides in Markdown with Hugo Blox Builder
+## Authors
+Arbatova Varvara Petrovna, Karpova Yesenia Alekseevna, Dagdelen Zeynap Rejepovna, Byugdanyuk Anna Vasilievna, Lyupp Sofya Romanovna
 
-[Hugo Blox Builder](https://hugoblox.com/) | [Documentation](https://docs.hugoblox.com/content/slides/)
+Peoples' Friendship University of Russia (RUDN)
 
----
-
-## Features
-
-- Efficiently write slides in Markdown
-- 3-in-1: Create, Present, and Publish your slides
-- Supports speaker notes
-- Mobile friendly slides
+Moscow, Ordzhonikidze St. 3
 
 ---
 
-## Controls
+# Introduction
 
-- Next: `Right Arrow` or `Space`
-- Previous: `Left Arrow`
-- Start: `Home`
-- Finish: `End`
-- Overview: `Esc`
-- Speaker notes: `S`
-- Fullscreen: `F`
-- Zoom: `Alt + Click`
-- [PDF Export](https://revealjs.com/pdf-export/)
+The formation of planetary systems is a key process in the evolution of the Universe
+
+The theory explains the origin of the Solar System and exoplanets
+
+**Objective:** To study the theoretical foundations of the formation of a planetary system from a gas and dust cloud
 
 ---
 
-## Code Highlighting
+# Origin of the Universe
 
-Inline code: `variable`
+![The Big Bang ~13.7 billion years ago](image/1.png)
 
-Code block:
-
-```python
-porridge = "blueberry"
-if porridge == "blueberry":
-    print("Eating...")
-```
+Expansion and cooling → particles → atoms → galaxies → stars
 
 ---
 
-## Math
+# Schmidt's Theory (1944)
 
-In-line math: $x + y = z$
+![Formation of a protoplanetary disk](image/2.png)
 
-Block math:
-
-$$
-f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$
-
----
-
-## Fragments
-
-Make content appear incrementally
-
-```
-{{%/* fragment */%}} One {{%/* /fragment */%}}
-{{%/* fragment */%}} **Two** {{%/* /fragment */%}}
-{{%/* fragment */%}} Three {{%/* /fragment */%}}
-```
-
-Press `Space` to play!
-
-{{% fragment %}} One {{% /fragment %}}
-{{% fragment %}} **Two** {{% /fragment %}}
-{{% fragment %}} Three {{% /fragment %}}
+1) A rotating gas and dust cloud contracts
+2) Rotation speed increases (law of conservation of angular momentum)
+3) The cloud flattens into a disk
+4) Rings form on the periphery → condense into planets
 
 ---
 
-A fragment can accept two optional parameters:
+# Laws of Motion
 
-- `class`: use a custom style (requires definition in custom CSS)
-- `weight`: sets the order in which a fragment appears
+**Kepler's Third Law:**
 
----
+$$v \sim \frac{1}{\sqrt{r}}$$
 
-## Speaker Notes
+Velocity decreases with distance from the center
 
-Add speaker notes to your presentation
-
-```markdown
-{{%/* speaker_note */%}}
-
-- Only the speaker can read these notes
-- Press `S` key to view
-  {{%/* /speaker_note */%}}
-```
-
-Press the `S` key to view the speaker notes!
-
-{{< speaker_note >}}
-
-- Only the speaker can read these notes
-- Press `S` key to view
-  {{< /speaker_note >}}
+Used to set initial velocities of particles
 
 ---
 
-## Themes
+# Gravitational Interaction
 
-- black: Black background, white text, blue links (default)
-- white: White background, black text, blue links
-- league: Gray background, white text, blue links
-- beige: Beige background, dark text, brown links
-- sky: Blue background, thin dark text, blue links
+**Potential Energy:**
 
----
+$$U_i = -\sum_{j \neq i} \frac{\gamma m_i m_j}{r_{ij}}$$
 
-- night: Black background, thick white text, orange links
-- serif: Cappuccino background, gray text, brown links
-- simple: White background, black text, blue links
-- solarized: Cream-colored background, dark green text, blue links
+Gravity is a long-range force
+
+Requires accounting for all particle pairs
+
+Complexity O(N²) limits the model size
 
 ---
 
-{{< slide background-image="/media/boards.jpg" >}}
+# Repulsion and Friction Forces
 
-## Custom Slide
+![Schematic representation](image/3.png)
 
-Customize the slide style and background
+Upon approach $b < R_i + R_j$:
 
-```markdown
-{{</* slide background-image="/media/boards.jpg" */>}}
-{{</* slide background-color="#0000FF" */>}}
-{{</* slide class="my-style" */>}}
-```
+**Repulsion:** $F^r(b) = k\left(\left(\frac{a}{b}\right)^8 - 1\right)$
 
----
+**Friction:** $F_f = \beta W_{\perp} F^r(b) \mathbf{n}$
 
-## Custom CSS Example
-
-Let's make headers navy colored.
-
-Create `assets/css/reveal_custom.css` with:
-
-```css
-.reveal section h1,
-.reveal section h2,
-.reveal section h3 {
-  color: navy;
-}
-```
+Friction is perpendicular to the radius vector, directed against the motion
 
 ---
 
-# Questions?
+# Particle Rotation
 
-[Ask](https://discord.gg/z8wNYzb)
+Moment of inertia: $I = \frac{2}{5} m R^2$
 
-[Documentation](https://docs.hugoblox.com/content/slides/)
+Equation of rotation: $I\varepsilon = R\sum\frac{b}{R_i+R_j}F^f$
+
+Rotational energy: $E_{\text{rot}} = \frac{I\omega^2}{2}$
+
+---
+
+# Particle Coalescence
+
+Upon complete coalescence:
+
+$m = m_i + m_j$
+
+$R = \sqrt[3]{R_i^3 + R_j^3}$
+
+$\mathbf{r} = \frac{m_i\mathbf{r}_i + m_j\mathbf{r}_j}{m_i + m_j}$
+
+$\mathbf{v} = \frac{m_i\mathbf{v}_i + m_j\mathbf{v}_j}{m_i + m_j}$
+
+Conserves the mass and momentum of the system
+
+---
+
+# Key Mechanisms
+
+| Mechanism | Role |
+|-----------|------|
+| Gravity | Attraction of particles, formation of clumps |
+| Repulsion | Prevents particles from passing through each other |
+| Friction | Energy dissipation, conversion to heat |
+| Rotation | Accounting for angular velocity during collisions |
+| Coalescence | Growth of planets from small particles |
+
+---
+
+# Conclusion
+
+The theoretical foundations of the formation of the Solar System have been reviewed:
+
+- Cosmological prehistory (Big Bang, supernovae)
+- Schmidt's theory of protoplanetary disk formation
+- Physical mechanisms: gravity, repulsion, friction, rotation, coalescence
+
+The obtained foundations will be used for numerical modeling

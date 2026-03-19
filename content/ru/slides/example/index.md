@@ -1,169 +1,138 @@
 ---
-title: Slides
-summary: An introduction to using Hugo Blox Builder's Slides feature.
+title: "Образование Солнечной системы"
+subtitle: "Теоретические основы"
+summary: "An introduction to using Hugo Blox Builder's Slides feature."
 authors: []
 tags: []
 categories: []
-date: '2019-02-05T00:00:00Z'
+date: '2026-03-19'
 slides:
-  # Choose a theme from https://github.com/hakimel/reveal.js#theming
   theme: black
-  # Choose a code highlighting style (if highlighting enabled in `params.toml`)
-  #   Light style: github. Dark style: dracula (default).
   highlight_style: dracula
 ---
 
-# Create slides in Markdown with Hugo Blox Builder
+## Авторы
+Арбатова Варвара Петровна, Карпова Есения Алексеевна, Дагделен Зейнап Реджеповна, Бюгданюк Анна Васильевна, Люпп Софья Романовна
 
-[Hugo Blox Builder](https://hugoblox.com/) | [Documentation](https://docs.hugoblox.com/content/slides/)
+Российский университет дружбы народов
 
----
-
-## Features
-
-- Efficiently write slides in Markdown
-- 3-in-1: Create, Present, and Publish your slides
-- Supports speaker notes
-- Mobile friendly slides
+Москва, ул. Орджоникидзе 3
 
 ---
 
-## Controls
+# Введение
 
-- Next: `Right Arrow` or `Space`
-- Previous: `Left Arrow`
-- Start: `Home`
-- Finish: `End`
-- Overview: `Esc`
-- Speaker notes: `S`
-- Fullscreen: `F`
-- Zoom: `Alt + Click`
-- [PDF Export](https://revealjs.com/pdf-export/)
+Формирование планетных систем — ключевой процесс эволюции Вселенной
+
+Теория объясняет происхождение Солнечной системы и экзопланет
+
+**Цель:** изучить теоретические основы образования планетной системы из газопылевого облака
 
 ---
 
-## Code Highlighting
+# Происхождение Вселенной
 
-Inline code: `variable`
+![Большой взрыв ~13,7 млрд лет назад](image/1.png)
 
-Code block:
-
-```python
-porridge = "blueberry"
-if porridge == "blueberry":
-    print("Eating...")
-```
+Расширение и охлаждение → частицы → атомы → галактики → звёзды
 
 ---
 
-## Math
+# Теория Шмидта (1944)
 
-In-line math: $x + y = z$
+![Формирование протопланетного диска](image/2.png)
 
-Block math:
-
-$$
-f\left( x \right) = \;\frac{{2\left( {x + 4} \right)\left( {x - 4} \right)}}{{\left( {x + 4} \right)\left( {x + 1} \right)}}
-$$
-
----
-
-## Fragments
-
-Make content appear incrementally
-
-```
-{{%/* fragment */%}} One {{%/* /fragment */%}}
-{{%/* fragment */%}} **Two** {{%/* /fragment */%}}
-{{%/* fragment */%}} Three {{%/* /fragment */%}}
-```
-
-Press `Space` to play!
-
-{{% fragment %}} One {{% /fragment %}}
-{{% fragment %}} **Two** {{% /fragment %}}
-{{% fragment %}} Three {{% /fragment %}}
+1) Вращающееся газопылевое облако сжимается
+2) Скорость вращения растёт (закон сохранения момента импульса)
+3) Облако сплющивается в диск
+4) На периферии образуются кольца → сгущаются в планеты
 
 ---
 
-A fragment can accept two optional parameters:
+# Законы движения
 
-- `class`: use a custom style (requires definition in custom CSS)
-- `weight`: sets the order in which a fragment appears
+**Третий закон Кеплера:**
 
----
+$$v \sim \frac{1}{\sqrt{r}}$$
 
-## Speaker Notes
+Скорость убывает с расстоянием от центра
 
-Add speaker notes to your presentation
-
-```markdown
-{{%/* speaker_note */%}}
-
-- Only the speaker can read these notes
-- Press `S` key to view
-  {{%/* /speaker_note */%}}
-```
-
-Press the `S` key to view the speaker notes!
-
-{{< speaker_note >}}
-
-- Only the speaker can read these notes
-- Press `S` key to view
-  {{< /speaker_note >}}
+Используется для задания начальных скоростей частиц
 
 ---
 
-## Themes
+# Гравитационное взаимодействие
 
-- black: Black background, white text, blue links (default)
-- white: White background, black text, blue links
-- league: Gray background, white text, blue links
-- beige: Beige background, dark text, brown links
-- sky: Blue background, thin dark text, blue links
+**Потенциальная энергия:**
 
----
+$$U_i = -\sum_{j \neq i} \frac{\gamma m_i m_j}{r_{ij}}$$
 
-- night: Black background, thick white text, orange links
-- serif: Cappuccino background, gray text, brown links
-- simple: White background, black text, blue links
-- solarized: Cream-colored background, dark green text, blue links
+Гравитация — дальнодействующая сила
+
+Требует учёта всех пар частиц
+
+Сложность O(N²) ограничивает размер модели
 
 ---
 
-{{< slide background-image="/media/boards.jpg" >}}
+# Силы отталкивания и трения
 
-## Custom Slide
+![Схематичное представление](image/3.png)
 
-Customize the slide style and background
+При сближении $b < R_i + R_j$:
 
-```markdown
-{{</* slide background-image="/media/boards.jpg" */>}}
-{{</* slide background-color="#0000FF" */>}}
-{{</* slide class="my-style" */>}}
-```
+**Отталкивание:** $F^r(b) = k\left(\left(\frac{a}{b}\right)^8 - 1\right)$
 
----
+**Трение:** $F_f = \beta W_{\perp} F^r(b) \mathbf{n}$
 
-## Custom CSS Example
-
-Let's make headers navy colored.
-
-Create `assets/css/reveal_custom.css` with:
-
-```css
-.reveal section h1,
-.reveal section h2,
-.reveal section h3 {
-  color: navy;
-}
-```
+Трение перпендикулярно радиусу, направлено против движения
 
 ---
 
-# Questions?
+# Вращение частиц
 
-[Ask](https://discord.gg/z8wNYzb)
+Момент инерции: $I = \frac{2}{5} m R^2$
 
-[Documentation](https://docs.hugoblox.com/content/slides/)
+Уравнение вращения: $I\varepsilon = R\sum\frac{b}{R_i+R_j}F^f$
+
+Энергия вращения: $E_{\text{rot}} = \frac{I\omega^2}{2}$
+
+---
+
+# Слипание частиц
+
+При полном слипании:
+
+$m = m_i + m_j$
+
+$R = \sqrt[3]{R_i^3 + R_j^3}$
+
+$\mathbf{r} = \frac{m_i\mathbf{r}_i + m_j\mathbf{r}_j}{m_i + m_j}$
+
+$\mathbf{v} = \frac{m_i\mathbf{v}_i + m_j\mathbf{v}_j}{m_i + m_j}$
+
+Сохраняются масса и импульс системы
+
+---
+
+# Ключевые механизмы
+
+| Механизм | Роль |
+|----------|------|
+| Гравитация | Притяжение частиц, формирование сгущений |
+| Отталкивание | Частицы не проходят друг сквозь друга |
+| Трение | Диссипация энергии, переход в тепло |
+| Вращение | Учёт угловой скорости при столкновениях |
+| Слипание | Рост планет из мелких частиц |
+
+---
+
+# Вывод
+
+Рассмотрены теоретические основы образования Солнечной системы:
+
+- Космологическая предыстория (Большой взрыв, сверхновые)
+- Теория Шмидта формирования протопланетного диска
+- Физические механизмы: гравитация, отталкивание, трение, вращение, слипание
+
+Полученные основы будут использованы для численного моделирования
